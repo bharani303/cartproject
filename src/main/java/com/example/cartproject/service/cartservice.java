@@ -13,7 +13,11 @@ public class cartservice {
 
 private  int id=0;
     public void add(cartmodel item) {
-        item.setId(id++);
+        item.setId(++id);
+        item.setProductname(item.getProductname());
+        item.setPrice(item.getPrice());
+        item.setDescription(item.getDescription());
+
         list.add(item);
     }
 
