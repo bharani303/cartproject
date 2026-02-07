@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 public class cartmodel {
 
     private Integer id;
+
+    @JsonProperty("productname")
     private String productname;
     private int price;
     private String description;
